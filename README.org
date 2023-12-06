@@ -1,0 +1,21 @@
+#+LATEX_CLASS_OPTIONS: [11pt]
+#+LATEX_HEADER: \usepackage{placeins}
+#+OPTIONS: H:4 toc:nil title:nil author:nil date:nil
+#+LATEX_HEADER: \input article_setup.tex
+#+LATEX_HEADER: \geometry{letterpaper,textwidth=6.4in,textheight=9in,includeheadfoot}
+
+#+BEGIN_EXPORT latex
+\author{\normalsize L. Larrabee Strow}
+\date{\normalsize \today}
+\title{\large\textbf{\textsf{README for Git Repo: cris-nucal}}}
+\maketitle
+#+END_EXPORT
+
+
+These codes how how to determine the CrIS in-orbit frequency calibration (ppm offsets from the ENGR PKT values used to generate the radiance data.
+
+-  =sc_mw_opts.m= :: what is this.
+
+
+** Details
+
