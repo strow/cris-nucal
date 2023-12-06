@@ -1,9 +1,10 @@
 day = '210';
-band = mw;  % lw/mw/sw
+band = '2';  % lw/mw/sw
 
-sc = speccal_rtp_bygran(@sc_opts,i,band,day,[0 30]);
+i = 1;
+sc = speccal_rtp_bygran(@sc_opts,band,'outputname_',[0 30]);
 fout = ['./test_out/' day '/idps_day' day '_' bandx '_' int2str(ifile) ];
-opts = sc_opts(band,day,[0 30],day);
+opts = sc_opts(band,'outputname',[0 30]);
 save(fout,'opts','sc');
 
 
