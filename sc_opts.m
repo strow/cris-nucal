@@ -1,4 +1,4 @@
-function opts = sc_mw_opts(band,run_name_prefix,kmaxmin);
+function opts = sc_opts(band,run_name_prefix,kmaxmin);
 %---------------------------------------------------------------------------------
 %run_name_prefix = 'mw_clear_'';
 %---------------------------------------------------------------------------------
@@ -16,6 +16,7 @@ datadir = '/asl/rtp/cris/npp_ADL_hires/allfov/2021/219';
 
 datadir = '/asl/rtp/cris/snpp_072023restart/allfov/2023/255';
 datadir = '/asl/rtp/cris/j01_noaa/allfov/2023/275';;
+datadir = 'Data';
 %datadir = '/asl/rtp/cris/j02_calval/allfov/2023/041';
 %datadir = '/asl/rtp/rtp_cris_ccast_hires/allfov/2018/061';
 %datadir = '/asl/rtp/rtp_cris2_ccast_hires_def_j1m1/clear/2018/';
@@ -47,7 +48,8 @@ datadir = '/asl/rtp/cris/j01_noaa/allfov/2023/275';;
 %glist = dir(fullfile(datadir,'cris2_ecmwf_csarta_clear_d2018*.rtp'));
 %glist = dir(fullfile(datadir,'cris_ecmwf_csarta_allfov_d*.rtp'));
 
-glist = dir(fullfile(datadir,'cris_sdr_ecmwf_csarta_allfov_d*.rtp'));
+%glist = dir(fullfile(datadir,'cris_sdr_ecmwf_csarta_allfov_d*.rtp'));
+glist = dir(fullfile(datadir,'cris_ecmwf_csarta_allfov_d*.rtp'));
 %glist = dir(fullfile(datadir,'cris_sdr_ecmwf_csarta_clear_d*.rtp'));
 
 opts.glist = glist;

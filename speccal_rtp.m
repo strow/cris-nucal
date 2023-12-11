@@ -15,15 +15,15 @@ function sc = speccal_rtp(getopts,band,foutname,kmaxmin);
 % max_dbt_surf:  maximum difference from simulated to observed surface BT
 %---------------------------------------------------------------------------------
 
-addpath /asl/matlib/h4tools          % rtpread
-addpath /asl/matlib/cris             % cris_highres_chans
+addpath ~/Git/matlib/h4tools          % rtpread
+addpath ~/Git/matlib/cris             % cris_highres_chans
 addpath /asl/matlab2012/cris/unapod  % apodization routines
 addpath ~/Git/ccast/motmsc           % finterp2
 addpath ~/Git/rtp_prod2/util         % rtp_sub_prof(prof,subset)
-addpath /asl/matlib/aslutil          % radtobt
-addpath /asl/matlib/time             % tai2dtime
+addpath ~/Git/matlib/aslutil          % radtobt
+addpath ~/Git/matlib/time             % tai2dtime
 %addpath /home/motteler/cris/cris_test/utils  % for now finterp2
-addpath  /asl/packages/ccast/motmsc/utils
+addpath  ~/Git/ccast/motmsc/utils
 
 % Limit and quantization of search
 df = 0.625;
