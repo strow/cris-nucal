@@ -2,6 +2,7 @@
 #+LATEX_HEADER: \usepackage{placeins}
 #+OPTIONS: H:4 toc:nil title:nil author:nil date:nil
 #+LATEX_HEADER: \input article_setup.tex
+#+LATEX_HEADER: \usepackage{url}
 #+LATEX_HEADER: \geometry{letterpaper,textwidth=6.4in,textheight=9in,includeheadfoot}
 
 #+BEGIN_EXPORT latex
@@ -16,11 +17,11 @@ These codes how how to determine the CrIS in-orbit frequency calibration (ppm of
 
 -  =test.m= :: Sample run.
 -  =sc_opts.m= :: Sets various options and file locations
--  =speccal_rtp.m :: Main routine to find ppm offsets
+-  =speccal_rtp.m= :: Main routine to find ppm offsets
 -  =test_out= :: Contains output from running test.m
 -  =output_j2_v2a_2023_day045.mat= :: Output from running test.m BUT for a whole day's worth of files (240 granules)
 
-The input files for =test.m= are too large for github.  They can be downloaded via ftp from our ftp server at \url{pub/packages/cris-nucal/Data/}.  
+The input files for =test.m= are are large on github, so take a while to download.  They can be also be downloaded at \url{https://asl.umbc.edu/pub/packages/cris-nucal/Data/}.  
 
 ** Details
 
