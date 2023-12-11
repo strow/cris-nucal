@@ -277,4 +277,4 @@ for ifov = 1:9
    scall_btbiasstd(ifov,l) =  sc(ifov).btbiasstd;
 end
 
-save(fout,'opts', 'sc', 'scall_*'); 
+% save(fout,'opts', 'sc', 'scall_*'); 

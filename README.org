@@ -14,8 +14,15 @@
 
 These codes how how to determine the CrIS in-orbit frequency calibration (ppm offsets from the ENGR PKT values used to generate the radiance data.
 
--  =sc_mw_opts.m= :: what is this.
-
+-  =test.m= :: Sample run.
+-  =sc_opts.m= :: Sets various options and file locations
+-  =speccal_rtp.m :: Main routine to find ppm offsets
+-  =test_out= :: Contains output from running test.m
+-  =output_j2_v2a_2023_day045.mat= :: Output from running test.m BUT for a whole day's worth of files (240 granules)
 
 ** Details
+
+These codes input rtp files (hdf4 files that contain both the observed radiances and simnulated radiances derived from ECMWF forcast fields closest to the observations.  Detection of clear scenes is only nominal.   The main use of =speccal_rtp= is for quick analysis of *all* data when trying to derive new focal plane information quickly.  
+
+A second code =speccal_stats.m= inputs very clear scenes derived on a daily basis over ocean.  These input files are aggregated by latitude in 40 bins that are roughly equal area bins.
 
